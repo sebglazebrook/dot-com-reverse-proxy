@@ -5,7 +5,7 @@ set -eux
 VERSION=$1
 
 # ssh into box
-ssh $SSH_COMMAND
+ssh $SSH_ARGS
 
 # pull new image
 docker pull sebglazebrook/dot-com-reverse-proxy:$VERSION
