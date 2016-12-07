@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -eux
+
+VERSION=$1
+
+./script/build
+./script/tag $VERSION
+
+docker push sebglazebrook/dot-com-reverse-proxy:$VERSION

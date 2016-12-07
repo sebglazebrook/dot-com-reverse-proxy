@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./script/build
+
+docker run -ti --network=host sebglazebrook/dot-com-reverse-proxy:latest
